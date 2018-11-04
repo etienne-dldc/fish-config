@@ -12,3 +12,5 @@ My fish-shell &amp; fisher config
 6. Create symlink to `config.fish` `ln -s ~/Workspace/github.com/etienne-dldc/fish-config/config.fish ~/.config/fish/config.fish`
 7. Create symlink to `fishfile` `ln -s ~/Workspace/github.com/etienne-dldc/fish-config/fishfile ~/.config/fish/fishfile`
 8. Run `fisher`
+9. Reload terminal
+10. Install `etienne-shell-tool` : `install-est`
