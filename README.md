@@ -5,8 +5,10 @@ My fish-shell &amp; fisher config
 ## Setup
 
 1. Install `fish` (`brew install fish`)
-2. Install `fisher`
-3. Clone this repo `git clone git@github.com:etienne-dldc/fish-config.git ~/Workspace/github.com/etienne-dldc/fish-config`
-4. Create symlink to `config.fish` `ln -s ~/Workspace/github.com/etienne-dldc/fish-config/config.fish ~/.config/fish/config.fish`
-5. Create symlink to `fishfile` `ln -s ~/Workspace/github.com/etienne-dldc/fish-config/fishfile ~/.config/fish/fishfile`
-6. Run `fisher`
+2. Set fish as default shell `chsh -s /usr/local/bin/fish`
+3. Reload terminal
+4. Install `fisher` (`curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish`)
+5. Clone this repo `git clone git@github.com:etienne-dldc/fish-config.git ~/Workspace/github.com/etienne-dldc/fish-config`
+6. Create symlink to `config.fish` `ln -s ~/Workspace/github.com/etienne-dldc/fish-config/config.fish ~/.config/fish/config.fish`
+7. Create symlink to `fishfile` `ln -s ~/Workspace/github.com/etienne-dldc/fish-config/fishfile ~/.config/fish/fishfile`
+8. Run `fisher`
