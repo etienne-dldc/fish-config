@@ -8,6 +8,10 @@ set PATH "/Users/etienne/.deno/bin" $PATH
 #     npm $argv
 # end
 
+function nvm
+    echo "=> fnm"
+end
+
 function install-est
     git clone git@github.com:etienne-dldc/etienne-shell-tools.git ~/Workspace/github.com/etienne-dldc/etienne-shell-tools
 end
