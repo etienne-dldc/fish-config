@@ -1,16 +1,7 @@
 # deno
 set PATH "/Users/etienne/.deno/bin" $PATH
 
-# cd ~/Workspace
-
-# function yarn
-#     echo "Use npm !"
-#     npm $argv
-# end
-
-function nvm
-    echo "=> fnm"
-end
+nvm use default
 
 function install-est
     git clone git@github.com:etienne-dldc/etienne-shell-tools.git ~/Workspace/github.com/etienne-dldc/etienne-shell-tools
@@ -18,8 +9,8 @@ end
 
 function git-sync
     git fetch $argv[1]
-    and git checkout $argv[2]
-    and git merge "$argv[1]/$argv[2]"
+    git checkout $argv[2]
+    git merge "$argv[1]/$argv[2]"
 end
 
 function reload
@@ -59,7 +50,6 @@ function yarn-fix
     switch $confirm
         case Y y
             rm ./yarn.lock
-
             mv ./fixed-yarn.lock ./yarn.lock
     end
 end
