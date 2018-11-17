@@ -1,7 +1,9 @@
 # deno
 set PATH "/Users/etienne/.deno/bin" $PATH
 
-nvm use default
+if type -q nvm
+    nvm use default
+end
 
 function install-est
     git clone git@github.com:etienne-dldc/etienne-shell-tools.git ~/Workspace/github.com/etienne-dldc/etienne-shell-tools
@@ -40,7 +42,7 @@ function npm-check
 end
 
 function overmind-devtools
-    npx overmind-devtools
+    npx overmind-devtools@next
 end
 
 function yarn-fix
