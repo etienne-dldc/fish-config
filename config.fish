@@ -15,6 +15,10 @@ function git-sync
     git merge "$argv[1]/$argv[2]"
 end
 
+function git-clean
+    git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | pbcopy
+end
+
 function reload
     source ~/.config/fish/config.fish
 end
