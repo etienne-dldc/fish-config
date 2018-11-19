@@ -16,7 +16,11 @@ function git-sync
 end
 
 function git-clean
-    git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | pbcopy
+    git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d
+end
+
+function git-clean-list
+    git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | echo
 end
 
 function reload
