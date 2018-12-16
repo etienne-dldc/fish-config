@@ -1,5 +1,12 @@
 # deno
-set PATH "/Users/etienne/.deno/bin" $PATH
+set PATH $PATH "/Users/etienne/.deno/bin"
+
+set -x ANDROID_HOME $HOME/Library/Android/sdk
+
+set PATH $PATH $ANDROID_HOME/emulator
+set PATH $PATH $ANDROID_HOME/tools
+set PATH $PATH $ANDROID_HOME/tools/bin
+set PATH $PATH $ANDROID_HOME/platform-tools
 
 if type -q nvm
     nvm use default
@@ -96,4 +103,12 @@ end
 
 function captainduckduck
     npx captainduckduck $argv
+end
+
+function rn
+    npx -p react-native-cli react-native $argv
+end
+
+function rna
+    npx -p react-native-cli react-native run-android
 end
