@@ -1,3 +1,13 @@
+# install fisher and run it if not installed
+if not functions -q fisher
+    set -q XDG_CONFIG_HOME
+    or set XDG_CONFIG_HOME ~/.config
+    # Create symlink to `fishfile` 
+    ln -s ~/Workspace/github.com/etienne-dldc/fish-config/fishfile ~/.config/fish/fishfile
+    curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
+    fish -c fisher
+end
+
 # deno
 set PATH $PATH "/Users/etienne/.deno/bin"
 
