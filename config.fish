@@ -111,6 +111,10 @@ function cap
     npx caprover $argv
 end
 
+function caprover
+    npx caprover $argv
+end
+
 function serve
     npx serve $argv
 end
