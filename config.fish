@@ -81,10 +81,6 @@ function yarn-fix
     end
 end
 
-function cdd
-    npx captainduckduck $argv
-end
-
 function cra
     npx create-react-app $argv
 end
@@ -99,20 +95,24 @@ function cra-ts
     yarn add typescript @types/node @types/react @types/react-dom @types/jest
 end
 
+function cdd
+    npx captainduckduck $argv
+end
+
 function cdd-tar
     npx captainduckduck deploy -t ./deploy.tar $argv
 end
 
-function jss
-    npx jss $argv
+function captainduckduck
+    npx captainduckduck $argv
+end
+
+function cap
+    npx caprover $argv
 end
 
 function serve
     npx serve $argv
-end
-
-function captainduckduck
-    npx captainduckduck $argv
 end
 
 function rn
