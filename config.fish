@@ -126,8 +126,3 @@ end
 function rna
     npx -p react-native-cli react-native run-android
 end
-
-function yarnt
-    yarn add "$argv[1]"
-    yarn add --dev "@types/$argv[1]"
-end
