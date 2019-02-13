@@ -67,7 +67,7 @@ function npm-check
 end
 
 function overmind-devtools
-    npx overmind-devtools@next
+    npx overmind-devtools
 end
 
 function yarn-fix
@@ -96,15 +96,18 @@ function cra-ts
 end
 
 function cdd
-    npx captainduckduck $argv
+    # npx captainduckduck $argv
+    echo "Use cap (caprover)"
 end
 
 function cdd-tar
-    npx captainduckduck deploy -t ./deploy.tar $argv
+    # npx captainduckduck deploy -t ./deploy.tar $argv
+    echo "Use cap (caprover)"
 end
 
 function captainduckduck
-    npx captainduckduck $argv
+    # npx captainduckduck $argv
+    echo "Use cap (caprover)"
 end
 
 function cap
