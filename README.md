@@ -18,7 +18,3 @@ ln -s ~/Workspace/github.com/etienne-dldc/fish-config/config.fish ~/.config/fish
 # 10. Install `etienne-shell-tool`
 install-est
 ```
-
-## Config DNS
-
-https://one.one.one.one/
