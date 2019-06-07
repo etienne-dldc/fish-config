@@ -129,3 +129,7 @@ end
 function rna
     npx -p react-native-cli react-native run-android
 end
+
+function typeorm
+    npx typeorm $argv
+end
