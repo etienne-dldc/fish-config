@@ -133,3 +133,9 @@ end
 function typeorm
     npx typeorm $argv
 end
+
+function code-alerion
+    code ~/Workspace/github.com/etienne-dldc/alerion-authent
+    code ~/Workspace/github.com/etienne-dldc/alerion-data
+    code ~/Workspace/github.com/etienne-dldc/alerion-data-client
+end
