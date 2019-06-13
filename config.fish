@@ -139,3 +139,8 @@ function code-alerion
     code ~/Workspace/github.com/etienne-dldc/alerion-data
     code ~/Workspace/github.com/etienne-dldc/alerion-data-client
 end
+
+function code-apollo
+    code ~/Workspace/github.com/LeReacteur/lereacteur-api
+    code ~/Workspace/github.com/LeReacteur/apollo
+end
