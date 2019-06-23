@@ -144,3 +144,7 @@ function code-apollo
     code ~/Workspace/github.com/LeReacteur/lereacteur-api
     code ~/Workspace/github.com/LeReacteur/apollo
 end
+
+function lerna
+    npx lerna $argv
+end
