@@ -13,6 +13,12 @@ set PATH $PATH "/Users/etienne/.deno/bin"
 
 set -x ANDROID_HOME $HOME/Library/Android/sdk
 
+# golang config
+# set the workspace path
+set -x GOPATH /users/my-username/go
+# add the go bin path to be able to execute our programs
+set -x PATH $PATH /usr/local/go/bin $GOPATH/bin
+
 set PATH $PATH $ANDROID_HOME/emulator
 set PATH $PATH $ANDROID_HOME/tools
 set PATH $PATH $ANDROID_HOME/tools/bin
