@@ -154,3 +154,7 @@ end
 function lerna
     npx lerna $argv
 end
+
+function npm-name
+    npx -p npm-name-cli npm-name $argv
+end
