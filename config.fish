@@ -24,6 +24,9 @@ set PATH $PATH $ANDROID_HOME/tools
 set PATH $PATH $ANDROID_HOME/tools/bin
 set PATH $PATH $ANDROID_HOME/platform-tools
 
+# Postgres.app
+set PATH $PATH /Applications/Postgres.app/Contents/Versions/latest/bin
+
 if type -q nvm
     nvm use default
 end
