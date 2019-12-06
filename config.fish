@@ -79,15 +79,8 @@ function overmind-devtools
     npx overmind-devtools
 end
 
-function yarn-fix
-    npx yarn-tools fix-duplicates ./yarn.lock $argv >fixed-yarn.lock
-
-    get --prompt="Replace yarn.lock [yY]?:" --rule="[yY]" | read confirm
-    switch $confirm
-        case Y y
-            rm ./yarn.lock
-            mv ./fixed-yarn.lock ./yarn.lock
-    end
+function yarn-deduplicate
+    npx yarn-deduplicate $argv
 end
 
 function cra
