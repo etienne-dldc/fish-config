@@ -5,8 +5,11 @@ My fish-shell &amp; fisher config
 ## Setup
 
 ```bash
+# Restore ssh keys
 # Install `fish`
 brew install fish
+# add fish as a shell (add /usr/local/bin/fish at the top)
+vim /etc/shells
 # Set fish as default shell
 chsh -s /usr/local/bin/fish
 # Reload terminal
@@ -14,7 +17,7 @@ chsh -s /usr/local/bin/fish
 git clone git@github.com:etienne-dldc/fish-config.git ~/Workspace/github.com/etienne-dldc/fish-config
 # Create symlink to `config.fish`
 ln -s ~/Workspace/github.com/etienne-dldc/fish-config/config.fish ~/.config/fish/config.fish
-# 9. Reload terminal
-# 10. Install `etienne-shell-tool`
+# Reload terminal
+# Install `etienne-shell-tool`
 install-est
 ```
