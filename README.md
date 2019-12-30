@@ -2,6 +2,10 @@
 
 My fish-shell &amp; fisher config
 
+## VSCode ctrl+space fix
+
+In Mac setting remove keybinding for ctrl+space (switching lang)
+
 ## Setup
 
 ```bash
