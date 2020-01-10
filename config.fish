@@ -125,11 +125,11 @@ function serve
 end
 
 function rn
-    npx -p react-native-cli react-native $argv
+    npx react-native $argv
 end
 
 function rna
-    npx -p react-native-cli react-native run-android
+    npx react-native run-android
 end
 
 function typeorm
