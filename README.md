@@ -25,3 +25,12 @@ ln -s ~/Workspace/github.com/etienne-dldc/fish-config/config.fish ~/.config/fish
 # Install `etienne-shell-tool`
 install-est
 ```
+
+## NginX
+
+```bash
+# install ngninx with brew
+# then symlink config
+ln -s ~/Workspace/github.com/etienne-dldc/fish-config/nginx /usr/local/etc/nginx/dldc
+# run minica (https://github.com/jsha/minica)
+```
