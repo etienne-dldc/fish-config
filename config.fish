@@ -9,7 +9,7 @@ if not functions -q fisher
 end
 
 # deno
-set PATH $PATH "/Users/etienne/.deno/bin"
+set PATH $PATH "/Users/etienne/.local/bin/deno"
 
 set -x ANDROID_HOME $HOME/Library/Android/sdk
 
