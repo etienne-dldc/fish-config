@@ -87,14 +87,8 @@ function cra
     npx create-react-app $argv
 end
 
-# function cra-ts
-#     npx create-react-app $argv --scripts-version=react-scripts-ts
-# end
-
 function cra-ts
     npx create-react-app $argv --typescript
-    cd "./$argv[1]"
-    yarn add typescript @types/node @types/react @types/react-dom @types/jest
 end
 
 function cdd
