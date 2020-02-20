@@ -88,7 +88,7 @@ function cra
 end
 
 function cra-ts
-    npx create-react-app $argv --typescript
+    npx create-react-app $argv --template typescript
 end
 
 function cdd
