@@ -33,4 +33,5 @@ install-est
 # then symlink config
 ln -s ~/Workspace/github.com/etienne-dldc/fish-config/nginx /usr/local/etc/nginx/dldc
 # run minica (https://github.com/jsha/minica)
+# brew services start nginx
 ```
