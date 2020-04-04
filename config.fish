@@ -9,7 +9,10 @@ if not functions -q fisher
 end
 
 # deno
-set PATH $PATH "/Users/etienne/.local/bin"
+set -x PATH $PATH $HOME/.local/bin
+
+# rust
+set -x PATH $PATH $HOME/.cargo/bin
 
 set -x ANDROID_HOME $HOME/Library/Android/sdk
 
