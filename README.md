@@ -33,6 +33,13 @@ install-est
 # then symlink config
 ln -s ~/Workspace/github.com/etienne-dldc/fish-config/nging.conf /usr/local/etc/nginx/nging.conf
 ln -s ~/Workspace/github.com/etienne-dldc/fish-config/nginx /usr/local/etc/nginx/dldc
-# run minica (https://github.com/jsha/minica)
-# sudo brew services start nginx
+# install minica (https://github.com/jsha/minica)
+# create ./minica folder then run
+minica --domains app.alerion.localhost
+minica --domains api.alerion.localhost
+minica --domains admin.alerion.localhost
+minica --domains game.babel-cards.localhost
+minica --domains backend.babel-cards.localhost
+# start nginx
+sudo nginx
 ```
