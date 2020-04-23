@@ -31,7 +31,7 @@ install-est
 ```bash
 # install ngninx with brew
 # then symlink config
-ln -s ~/Workspace/github.com/etienne-dldc/fish-config/nging.conf /usr/local/etc/nginx/nging.conf
+ln -s ~/Workspace/github.com/etienne-dldc/fish-config/nginx.conf /usr/local/etc/nginx/nginx.conf
 ln -s ~/Workspace/github.com/etienne-dldc/fish-config/nginx /usr/local/etc/nginx/dldc
 # install minica (https://github.com/jsha/minica)
 # create ./minica folder then run
