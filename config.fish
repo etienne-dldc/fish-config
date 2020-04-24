@@ -11,6 +11,9 @@ end
 # deno
 set -x PATH $PATH $HOME/.local/bin
 
+set -x DENO_INSTALL /Users/etienne/.deno
+set -x PATH $PATH $DENO_INSTALL/bin
+
 # rust
 set -x PATH $PATH $HOME/.cargo/bin
 
