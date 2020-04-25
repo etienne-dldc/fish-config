@@ -17,6 +17,10 @@ set -x PATH $PATH $DENO_INSTALL/bin
 # rust
 set -x PATH $PATH $HOME/.cargo/bin
 
+# coreutils
+
+set -x PATH $PATH /usr/local/opt/coreutils/libexec/gnubin
+
 set -x ANDROID_HOME $HOME/Library/Android/sdk
 
 # golang config
