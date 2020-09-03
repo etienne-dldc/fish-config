@@ -128,6 +128,10 @@ function serve
     npx serve $argv
 end
 
+function http-server
+    npx http-server $argv
+end
+
 function rn
     npx react-native $argv
 end
