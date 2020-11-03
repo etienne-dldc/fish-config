@@ -65,7 +65,7 @@ end
 
 # Custom tools
 function est
-    npx -p ~/Workspace/github.com/etienne-dldc/etienne-shell-tools est $argv
+    pnpx -p ~/Workspace/github.com/etienne-dldc/etienne-shell-tools est $argv
 end
 
 function clone
@@ -73,32 +73,32 @@ function clone
 end
 
 function tsc
-    npx -p typescript tsc $argv
+    pnpx -p typescript tsc $argv
 end
 
 # Node CLI tool
 function oclif
-    npx oclif $argv
+    pnpx oclif $argv
 end
 
 function npm-check
-    npx npm-check -u $argv
+    pnpx npm-check -u $argv
 end
 
 function overmind-devtools
-    npx overmind-devtools
+    pnpx overmind-devtools
 end
 
 function yarn-deduplicate
-    npx yarn-deduplicate $argv
+    pnpx yarn-deduplicate $argv
 end
 
 function cra
-    npx create-react-app $argv
+    pnpx create-react-app $argv
 end
 
 function cra-ts
-    npx create-react-app $argv --template typescript
+    pnpx create-react-app $argv --template typescript
 end
 
 function cdd
@@ -117,31 +117,31 @@ function captainduckduck
 end
 
 function cap
-    npx caprover $argv
+    pnpx caprover $argv
 end
 
 function caprover
-    npx caprover $argv
+    pnpx caprover $argv
 end
 
 function serve
-    npx serve $argv
+    pnpx serve $argv
 end
 
 function http-server
-    npx http-server $argv
+    pnpx http-server $argv
 end
 
 function rn
-    npx react-native $argv
+    pnpx react-native $argv
 end
 
 function rna
-    npx react-native run-android
+    pnpx react-native run-android
 end
 
 function typeorm
-    npx typeorm $argv
+    pnpx typeorm $argv
 end
 
 function code-alerion
@@ -156,9 +156,13 @@ function code-apollo
 end
 
 function lerna
-    npx lerna $argv
+    pnpx lerna $argv
 end
 
 function npm-name
-    npx -p npm-name-cli npm-name $argv
+    pnpx -p npm-name-cli npm-name $argv
 end
+
+# tabtab source for packages
+# uninstall by removing these lines
+[ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
