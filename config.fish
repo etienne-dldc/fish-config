@@ -43,6 +43,7 @@ end
 
 function install-est
     git clone git@github.com:etienne-dldc/etienne-shell-tools.git ~/Workspace/github.com/etienne-dldc/etienne-shell-tools
+    git clone git@github.com:etienne-dldc/netlify-shortener.git ~/Workspace/github.com/etienne-dldc/netlify-shortener
 end
 
 function git-sync
