@@ -68,6 +68,11 @@ function est
     pnpx -p ~/Workspace/github.com/etienne-dldc/etienne-shell-tools est $argv
 end
 
+# URL shortener
+function shorten
+    pnpx -p ~/Workspace/github.com/etienne-dldc/netlify-shortener shorten $argv
+end
+
 function clone
     est clone $argv
 end
@@ -166,3 +171,6 @@ end
 # tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+
