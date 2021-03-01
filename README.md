@@ -21,7 +21,13 @@ chsh -s /usr/local/bin/fish
 git clone git@github.com:etienne-dldc/fish-config.git ~/Workspace/github.com/etienne-dldc/fish-config
 # Create symlink to `config.fish`
 ln -s ~/Workspace/github.com/etienne-dldc/fish-config/config.fish ~/.config/fish/config.fish
+# Install Fisher
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+# Create symlink to fish_plugins
+ln -s ~/Workspace/github.com/etienne-dldc/fish-config/fish_plugins ~/.config/fish/fish_plugins
 # Reload terminal
+# Install PNPM
+npm install -g pnpm
 # Install `etienne-shell-tool`
 install-est
 ```
