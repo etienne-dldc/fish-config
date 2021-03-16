@@ -28,9 +28,9 @@ set PATH $PATH $ANDROID_HOME/platform-tools
 # Postgres.app
 set PATH $PATH /Applications/Postgres.app/Contents/Versions/latest/bin
 
-if type -q nvm
-    nvm use default
-end
+# if type -q nvm
+#     nvm use default
+# end
 
 function install-est
     git clone git@github.com:etienne-dldc/etienne-shell-tools.git ~/Workspace/github.com/etienne-dldc/etienne-shell-tools
