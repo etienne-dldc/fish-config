@@ -43,6 +43,12 @@ function git-sync
     git merge "$argv[1]/$argv[2]"
 end
 
+# Fix macos mic issue
+function fix-mic
+    sudo kextunload /System/Library/Extensions/AppleHDA.kext
+    sudo kextload /System/Library/Extensions/AppleHDA.kext
+end
+
 function git-clean
     git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d
 end
