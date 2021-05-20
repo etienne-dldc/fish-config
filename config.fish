@@ -32,9 +32,9 @@ set PATH $PATH /Applications/Postgres.app/Contents/Versions/latest/bin
 #     nvm use default
 # end
 
-function install-est
-    git clone git@github.com:etienne-dldc/etienne-shell-tools.git ~/Workspace/github.com/etienne-dldc/etienne-shell-tools
+function install-mac-env
     git clone git@github.com:etienne-dldc/netlify-shortener.git ~/Workspace/github.com/etienne-dldc/netlify-shortener
+    git clone git@github.com:etienne-dldc/scripts.git ~/Workspace/github.com/etienne-dldc/scripts
 end
 
 function git-sync
@@ -62,17 +62,18 @@ function reload
 end
 
 # Custom tools
-function est
-    npx -p ~/Workspace/github.com/etienne-dldc/etienne-shell-tools est $argv
+function run
+    npx -p ~/Workspace/github.com/etienne-dldc/scripts run $argv
+end
+
+# Custom tools
+function clone
+    run clone $argv
 end
 
 # URL shortener
 function shorten
     npx -p ~/Workspace/github.com/etienne-dldc/netlify-shortener shorten $argv
-end
-
-function clone
-    est clone $argv
 end
 
 function tsc
