@@ -63,12 +63,12 @@ end
 
 # Custom tools
 function est
-    pnpx -p ~/Workspace/github.com/etienne-dldc/etienne-shell-tools est $argv
+    npx -p ~/Workspace/github.com/etienne-dldc/etienne-shell-tools est $argv
 end
 
 # URL shortener
 function shorten
-    pnpx -p ~/Workspace/github.com/etienne-dldc/netlify-shortener shorten $argv
+    npx -p ~/Workspace/github.com/etienne-dldc/netlify-shortener shorten $argv
 end
 
 function clone
@@ -76,94 +76,72 @@ function clone
 end
 
 function tsc
-    pnpx -p typescript tsc $argv
+    npx -p typescript tsc $argv
 end
 
 # Node CLI tool
 function oclif
-    pnpx oclif $argv
+    npx oclif $argv
 end
 
 function npm-check
-    pnpx npm-check -u $argv
+    npx npm-check -u $argv
 end
 
 function overmind-devtools
-    pnpx overmind-devtools
+    npx overmind-devtools
 end
 
 function yarn-deduplicate
-    pnpx yarn-deduplicate $argv
+    npx yarn-deduplicate $argv
 end
 
 function cra
-    pnpx create-react-app $argv
+    npx create-react-app $argv
 end
 
 function cra-ts
-    pnpx create-react-app $argv --template typescript
-end
-
-function cdd
-    # npx captainduckduck $argv
-    echo "Use cap (caprover)"
-end
-
-function cdd-tar
-    # npx captainduckduck deploy -t ./deploy.tar $argv
-    echo "Use cap (caprover)"
-end
-
-function captainduckduck
-    # npx captainduckduck $argv
-    echo "Use cap (caprover)"
+    npx create-react-app $argv --template typescript
 end
 
 function cap
-    pnpx caprover $argv
+    npx caprover $argv
 end
 
 function caprover
-    pnpx caprover $argv
+    npx caprover $argv
 end
 
 function serve
-    pnpx serve $argv
+    npx serve $argv
 end
 
 function http-server
-    pnpx http-server $argv
+    npx http-server $argv
 end
 
 function rn
-    pnpx react-native $argv
+    npx react-native $argv
 end
 
 function rna
-    pnpx react-native run-android
+    npx react-native run-android
 end
 
 function typeorm
-    pnpx typeorm $argv
-end
-
-function code-alerion
-    code ~/Workspace/github.com/etienne-dldc/alerion-authent
-    code ~/Workspace/github.com/etienne-dldc/alerion-data
-    code ~/Workspace/github.com/etienne-dldc/alerion-data-client
-end
-
-function code-apollo
-    code ~/Workspace/github.com/LeReacteur/lereacteur-api
-    code ~/Workspace/github.com/LeReacteur/apollo
+    npx typeorm $argv
 end
 
 function lerna
-    pnpx lerna $argv
+    npx lerna $argv
 end
 
 function npm-name
-    pnpx -p npm-name-cli npm-name $argv
+    npx -p npm-name-cli npm-name $argv
+end
+
+function zx-run
+    npx zx ~/Workspace/github.com/etienne-dldc/zx-scripts/scripts/$argv[1].mjs $argv[2..-1]
 end
 
 # tabtab source for packages
