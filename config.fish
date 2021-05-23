@@ -145,6 +145,10 @@ function zx-run
     npx zx ~/Workspace/github.com/etienne-dldc/zx-scripts/scripts/$argv[1].mjs $argv[2..-1]
 end
 
+function dock-delay
+    defaults write com.apple.dock autohide-delay -float $argv && killall Dock
+end
+
 # tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
