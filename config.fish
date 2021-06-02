@@ -149,6 +149,10 @@ function dock-delay
     defaults write com.apple.dock autohide-delay -float $argv && killall Dock
 end
 
+function git-delete-all-branches
+    git branch | grep -v '^*' | xargs git branch -D
+end
+
 # tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
