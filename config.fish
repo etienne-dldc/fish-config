@@ -153,6 +153,10 @@ function git-delete-all-branches
     git branch | grep -v '^*' | xargs git branch -D
 end
 
+function git-zip
+    git archive -o (basename $PWD).zip HEAD
+end
+
 # tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
